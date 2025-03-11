@@ -5,7 +5,7 @@ import React from 'react';
 import './timer.css';
 
 /*
- You can view the component via running npm run storybook or npm run dev in the terminal after you place yourself within timer-component
+ You can view the component via running npm run storybook or npm run dev in the terminal after you place yourself within appropriate folder
  The `Timer` component is a customizable countdown timer that displays elapsed time and time remaining. It accepts the following props:
 
  - `title` (default: "No Title"): A string that displays a title or label for the timer. It should be a non-empty string.

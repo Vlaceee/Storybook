@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.page-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  box-sizing:border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  width: 100%;
+  padding:0px 16px;
+ 
+  background-color: white;
+}
+
+.header-menu-div {
+  position:relative;
+  display:flex;
+  height:100%;
+  align-items: center;
+ 
+  
+}
+
+.header-search-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 90%;
+  min-width: 615px; 
+}
+
+.header-miscellaneous-div {
+  display: flex;
+  position:relative;
+}
+
+.hamburger-menu {
+  position:relative;
+ 
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border: none;
+  padding:8px;
+  cursor: pointer;
+  z-index:1;
+  background-color: transparent;
+  transition:background-color 0.3s ease;
+}
+
+.search-inner-icon {
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+ 
+  left: 8px;
+  top: 16px;
+  
+}
+
+.hamburger-menu:hover{
+  background-color:rgba(207,206,206,0.4);
+}
+
+.search-bar-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 532px;
+  height: 68%;
+}
+
+.search-bar {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 500px;
+  height: 100%; 
+  border: 1px solid #c6c6c6;
+  border-radius: 40px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-family: "Roboto", "Arial";
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-size: 14px;
+  color: black;
+  padding-left: 16px;
+}
+
+
+
+.magnifying-glass {
+  position: absolute;
+  display: none;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  left: 17px;
+  top: 15px;
+}
+.keyboard-button {
+  background-color: white;
+  position: absolute;
+  right: 90px; 
+  margin: 0px;
+  border: none;
+  cursor: pointer;
+}
+.keyboard-search-icon {
+  width: 19px;
+  height: 11px;
+}
+
+.delete-text-button {
+  background-color: white;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  border-radius: 100%;
+  z-index: 1;
+  padding: 4px 6px;
+  transition:background-color 0.3s ease;
+}
+
+.delete-text-button:hover {
+  display: inline-block;
+  background-color: #cfcece;
+}
+
+.delete-image {
+  width: 16px;
+  height: 16px;
+}
+
+.search-button {
+
+  background-color: white;
+  width: 12%;
+  height: 68%; 
+  border: 1px solid #c6c6c6;
+  border-left: none;
+  border-radius: 40px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+  padding: 1px 6px; 
+  margin-right: 4px;
+}
+
+.search-button-image {
+  width: 24px;
+  height: 24px;
+}
+
+.voice-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 8px;
+  border-radius: 100%;
+  transition: background-color 0.3s;
+}
+
+.voice-button-image {
+  width: 24px;
+  height: 22px;
+}
+
+.voice-button:hover {
+  background-color: #cfcece;
+}
+
+.header-search-div:has(.search-bar:focus) .magnifying-glass {
+  display: inline;
+}
+
+.header-search-div:has(.search-bar:not(:placeholder-shown)) .keyboard-button {
+  right: 114px;
+}
+
+.header-search-div:has(.search-bar:not(:placeholder-shown))
+  .delete-text-button {
+  display: inline; 
+  right: 88px;
+}
+
+.search-bar:focus {
+  outline:none; 
+  border: 2px solid #0e64af ;
+  color: black;
+  font-size: 14px;
+  border-top-right-radius:0px ;
+  border-bottom-right-radius: 0px;
+  padding-left: 48px; 
+  min-width: 532px; 
+}
+
+.search-bar::placeholder {
+  font-size: 18px;
+  color: #c6c6c6;
+}
+
+.youtube-logo {
+  width: 93px;
+  min-width: 20px;
+  margin: 18px 14px 18px 16px;
+  padding-bottom: 4px;
+}
+
+.create-button {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-right: 12px;
+  padding: 6px 16px;
+  transition: background-color 0.3s;
+}
+
+.create-button-image {
+  width: 14px;
+  height: 14px;
+
+  margin-right: 8px;
+}
+
+.create-button:hover {
+  background-color: #cfcece;
+}
+
+.bell-button {
+  background-color: white;
+  display: inline-block;
+  border: none;
+  padding: 6px 6px;
+  cursor: pointer;
+  border-radius: 100%;
+  margin: 0px;
+  margin-right: 8px;
+  transition: background-color 0.3s;
+}
+
+.bell-button-image {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: block;
+  fill: none;
+  stroke: rgb(255, 255, 255);
+}
+
+.bell-notification{
+  position:absolute;
+  right:81px;
+  top:5px;
+  border-radius:50%;
+  width:16px;
+  height:12px;
+  color:white;
+  background-color: rgb(206, 36, 36);
+  font-size:10px;
+  text-align: center;
+  padding-top:2px;
+  z-index:1;
+
+}
+.logo-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 24px;
+  margin-left: 16px;
+}
+
+.logo-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 40px;
+}
+
+
+
+.bell-button:hover {
+  background-color: #cfcece;
+}
+
+.main-page {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+}
+
+.left-div{
+  width:20px;
+}
+.left-menu {
+  display: flex;
+  height: 100%;
+  width: 5%;
+  background-color: rgb(194, 103, 103);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-div {
+  height: 100%;
+  width: 90%;
+}
+
+.video-thumbnail {
+  width: 200px;
+  height: 120px;
+}

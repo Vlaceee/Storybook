@@ -34,9 +34,9 @@
 }
 
 @keyframes alternateBackground {
-    0% { background-color: #67cb88; }  /* Green */
-    50% { background-color: #cb6767; } /* Red */
-    100% { background-color: #67cb88; } /* Green */
+    0% { background-color: #67cb88; } 
+    50% { background-color: #cb6767; } 
+    100% { background-color: #67cb88; } 
 }
 
 .alternate {
